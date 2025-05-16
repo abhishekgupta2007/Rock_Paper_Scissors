@@ -70,8 +70,22 @@ img {
     padding: 1rem;
     border-radius: 1rem;
 }
-/* Responsive for small screens */
-@media (max-width: 600px) {
+/* ============================
+   Responsive Styles
+============================ */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    .choices {
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
     .choice {
         height: 120px;
         width: 120px;
@@ -82,16 +96,10 @@ img {
         width: 100px;
     }
 
-    .choices {
-        flex-direction: column;
-        gap: 2rem;
-        margin-top: 3rem;
-    }
-
     .score-board {
         flex-direction: column;
-        gap: 2rem;
-        font-size: 1.5rem;
+        gap: 1.5rem;
+        font-size: 1.8rem;
     }
 
     #user-score,
@@ -101,12 +109,36 @@ img {
 
     #msg {
         font-size: 1.5rem;
-        padding: 0.75rem;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        height: 80px;
+        width: 80px;
     }
 
     h1 {
         font-size: 1.5rem;
-        height: 4rem;
-        line-height: 4rem;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 2.5rem;
+    }
+
+    .score-board {
+        font-size: 1.5rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
     }
 }
